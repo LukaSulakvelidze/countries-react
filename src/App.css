@@ -1,0 +1,280 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.body_dark {
+  background-color: #202c36;
+}
+
+.loading_icon {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 4.3%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  color: #111517;
+  background-color: white;
+}
+
+.header_dark {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  color: #ffffff;
+  background-color: #2b3844;
+}
+
+header > .page_name {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.dark_toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 17px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 4.3% 65px;
+}
+
+.search_input_filter {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 26px;
+  padding: 16px 32px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.form_dark {
+  color: white;
+  background-color: #2b3844;
+}
+
+input {
+  font-family: "Nunito Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  color: #c4c4c4;
+  background: transparent;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 58.3%;
+}
+
+.filter_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  color: #111517;
+  background-color: #fff;
+}
+
+.filter_container > span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.filter_container_dark {
+  color: white;
+  background-color: #2b3844;
+}
+
+.region_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  color: #111517;
+  background-color: white;
+}
+
+.region_list_dark {
+  color: white;
+  background-color: #2b3844;
+}
+
+.region_list > li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.region_list > li:hover {
+  font-size: 15px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+
+.country_grid_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 11%;
+}
+
+.country_card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 264px;
+  padding-bottom: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+  color: #111517;
+  background-color: white;
+}
+
+.country_card_dark {
+  color: white;
+  background-color: #2b3844;
+}
+
+.country_img {
+  width: 100%;
+  height: 160px;
+  border-radius: 5px;
+}
+
+.country_info_className {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 24px;
+}
+
+.country_info_className > .country_name {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+.country_details_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.country_details_container > p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media (width >= 1024px) {
+  header {
+    padding: 23px 5.6%;
+  }
+
+  header > .page_name {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .dark_toggle {
+    font-size: 16px;
+  }
+
+  main {
+    gap: 48px;
+    height: 100vh;
+    padding: 48px 5.6% 45px;
+  }
+
+  .search_input_filter {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form {
+    gap: 24px;
+    width: 480px;
+    height: 56px;
+    padding: 18px 32px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .filter {
+    width: 200px;
+  }
+
+  .filter_container {
+    padding: 18px 24px;
+  }
+
+  .country_grid_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 67px 5.4%;
+    padding: 0 0 45px 0;
+  }
+
+  .country_card {
+    width: 20.9%;
+  }
+
+  .country_img {
+    height: 160px;
+  }
+}

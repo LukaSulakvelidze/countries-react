@@ -1,0 +1,147 @@
+body {
+  background: white;
+}
+
+main {
+  padding: 45px 7.5% 62px;
+}
+
+a {
+  width: fit-content;
+  text-decoration: none;
+}
+
+.go_back_button,
+.border_countries_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 104px;
+  height: 32px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  cursor: pointer;
+  color: #111517;
+  background: #fff;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
+}
+
+.go_back_button_dark,
+.border_countries_button_dark {
+  color: white;
+  background: #2b3844;
+}
+
+.country_content,
+.country_info,
+.country_info_child,
+.country_parameters,
+.boarders {
+  display: flex;
+  flex-direction: column;
+}
+
+.country_content {
+  gap: 44px;
+  color: #111517;
+  background-color: transparent;
+}
+
+.country_content_dark {
+  color: white;
+}
+
+.country_info {
+  gap: 34px;
+}
+
+.country_name {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.country_info_child {
+  gap: 16px;
+}
+
+.country_parameters {
+  gap: 32px;
+}
+
+ul {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  list-style: none;
+}
+
+.boarders {
+  gap: 16px;
+}
+
+.boarders > h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.border_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+@media (width >= 1224px) {
+  main {
+    padding: 80px 5.6%;
+  }
+
+  .go_back_button {
+    gap: 10px;
+    width: 136px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
+  .country_content {
+    flex-direction: row;
+    gap: 144px;
+  }
+
+  .country_content > img {
+    width: 560px;
+    height: 401px;
+  }
+
+  .country_info {
+    gap: 68px;
+  }
+
+  .country_name {
+    font-size: 32px;
+  }
+
+  .country_info_child {
+    gap: 23px;
+  }
+
+  .country_parameters {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  ul {
+    font-size: 16px;
+  }  
+
+  .boarders {
+    flex-direction: row;
+  }
+}
